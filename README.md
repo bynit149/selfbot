@@ -9,7 +9,7 @@ pip2 install requests
 pip2 install goslate
 pip2 install bs4
 pip2 install thrift==0.9.3
-git clone https://github.com/tankeng/newself2.git
+git clone https://github.com/tankeng/selfbot.git
 ======== 
 
 COMMAND VIA VPS/SERVER
@@ -23,16 +23,16 @@ sudo pip install requests
 sudo pip install goslate
 sudo pip install bs4
 sudo pip install thrift==0.9.3
-git clone https://github.com/tankeng/newself2.git
+git clone https://github.com/tankeng/selfbot.git
 ========
 
 ====VIA TERMUX====
-cd newself2
-python2 prankself.py
+cd selfbot
+python2 keng.py
 
 ====VIA SERVER====
-cd newself2
-Python prankself.py
+cd selfbot
+Python keng.py
 
 
 # SELFBOTS
