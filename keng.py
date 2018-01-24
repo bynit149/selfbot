@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, tempfile, glob, shutil, unicodedata, goslate
 
 cl = LINETCR.LINE()
-cl.login(token="EpaMK5O5mfmoi4jbNoUc.QModQeCjX2N8N/0LDCNd+a.kOWmIvEYBYkP+EG5onZrebuxuNIXfHviAOGMH7TBJvU=")
+cl.login(token="EpJShWyoM5LNBt3KOBi4.qJVjp92ujkRQwQ4y2/ErTa.eYa5xS1rPHnmlkdebvAI8W6iObFmdrpsUNDafNH8zu8=")
 cl.loginResult()
 
 
@@ -123,7 +123,7 @@ mid = cl.getProfile().mid
 #ki5mid = ki5.getProfile().mid
 #ki6mid = ki6.getProfile().mid
 Bots=[mid]
-admsa = "uaa6383a84709c769fc9fed2575c9c3fc"
+admsa = "u423bc93fdd9424aaea5aae18dbe791b4"
 
 wait = {
     'contact':False,
