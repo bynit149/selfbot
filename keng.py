@@ -1085,7 +1085,7 @@ def bot(op):
                     ki18.updateProfile(profile)
                     ki8.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
 #--------------------------------------------------------
-            elif "uid:" in msg.text:
+            elif "Sc:" in msg.text:
                 mmid = msg.text.replace("Mid:","")
                 msg.contentType = 13
                 msg.contentMetadata = {"mid":mmid}
@@ -2465,7 +2465,7 @@ def bot(op):
                            ki18.kickoutFromGroup(msg.to,[target])
                        except:
                            ki18.sendText(msg.to,"Error")
-            elif ("Sc " in msg.text):
+            elif ("uid " in msg.text):
                    key = eval(msg.contentMetadata["MENTION"])
                    key1 = key["MENTIONEES"][0]["M"]
                    key = cl.getContact(key1)
