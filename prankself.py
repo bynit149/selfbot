@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, tempfile, glob, shutil, unicodedata, goslate
 
 cl = LINETCR.LINE()
-cl.login(token="EpOQISCkByZIrGqEyPD9.jlsR0/a3WnhuamX4hH3KQq.xdOK0f0q6hzuBVEydskjJM97puJnlnfeO29MnySuB5A=")
+cl.login(token="EpJShWyoM5LNBt3KOBi4.qJVjp92ujkRQwQ4y2/ErTa.eYa5xS1rPHnmlkdebvAI8W6iObFmdrpsUNDafNH8zu8=")
 cl.loginResult()
 
 
@@ -123,7 +123,7 @@ mid = cl.getProfile().mid
 #ki5mid = ki5.getProfile().mid
 #ki6mid = ki6.getProfile().mid
 Bots=[mid]
-admsa = "u24b4abd3e037c0d1d400cc781e1de4a9"
+admsa = "u423bc93fdd9424aaea5aae18dbe791b4"
 
 wait = {
     'contact':False,
@@ -3995,8 +3995,8 @@ def bot(op):
 #-----------------------------------------------
             elif msg.text in ["Welcome","wc","welcome","Wc"]:
                 ginfo = cl.getGroup(msg.to)
-                cl.sendText(msg.to,"Selamat Datang Di Grup " + str(ginfo.name))
-                cl.sendText(msg.to,"Owner Grup " + str(ginfo.name) + " :\n" + ginfo.creator.displayName )
+                cl.sendText(msg.to,"ยินดีต้อนรับสู่ห้อง " + str(ginfo.name))
+                cl.sendText(msg.to,"แอดมินห้องชื่อ " + str(ginfo.name) + " :\n" + ginfo.creator.displayName )
             elif "Bc " in msg.text:
 				bctxt = msg.text.replace("Bc ","")
 				ki.sendText(msg.to,(bctxt))
