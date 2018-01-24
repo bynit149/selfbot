@@ -3996,7 +3996,7 @@ def bot(op):
             elif msg.text in ["Welcome","wc","welcome","Wc"]:
                 ginfo = cl.getGroup(msg.to)
                 cl.sendText(msg.to,"ยินดีต้อนรับสู่ห้อง " + str(ginfo.name))
-                cl.sendText(msg.to,"แอดมินห้องชื่อ " + str(ginfo.name) + " :\n" + ginfo.creator.displayName )
+                cl.sendText(msg.to,"แอดมินห้อง " + str(ginfo.name) + " :\n" + ginfo.creator.displayName )
             elif "Bc " in msg.text:
 				bctxt = msg.text.replace("Bc ","")
 				ki.sendText(msg.to,(bctxt))
