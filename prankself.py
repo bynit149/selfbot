@@ -1342,7 +1342,7 @@ def bot(op):
 #                msg.contentType = 13
 #                msg.contentMetadata = {'mid': admsa}
 #                cl.sendMessage(msg)
-            elif "Gowner" == msg.text:
+            elif "เช็คแอด" == msg.text:
                 try:
                     group = cl.getGroup(msg.to)
                     GS = group.creator.mid
@@ -2664,8 +2664,8 @@ def bot(op):
                 	cl.sendText(msg.to, str(njer))
 
 #-----------------------------------------------------------
-            elif msg.text == "Check":
-                    cl.sendText(msg.to, "Check Yang nyimak")
+            elif msg.text == "นับ":
+                    cl.sendText(msg.to, "ระบบเริ่มตรวจนับคนอ่าน")
                     try:
                         del wait2['readPoint'][msg.to]
                         del wait2['readMember'][msg.to]
@@ -2678,7 +2678,7 @@ def bot(op):
                     wait2['ROM'][msg.to] = {}
                     print wait2
 
-            elif msg.text == "Cctv":
+            elif msg.text == "อ่าน":
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
@@ -2687,7 +2687,7 @@ def bot(op):
                             for rom in wait2["ROM"][msg.to].items():
                                 print rom
                                 chiya += rom[1] + "\n"
-                        cl.sendText(msg.to,"======Tercyduck====== %s\n=====[CCTV SAAT INI]======\n%s\nReading point creation date n time:\n[%s]" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to,"======แสดงผล====== %s\n=====[รายชื่อต่อไปนี้กำลังแอบอ่าน]======\n%s\nReading point creation date n time:\n[%s]" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
                          cl.sendText(msg.to,"An already read point has not been set.\n「set」you can send ♪ read point will be created ♪")
 #-------------------------------------------------
