@@ -1,3 +1,4 @@
+
 COMMAND VIA TERMUX
 =======
 pkg install python2 -y
@@ -13,6 +14,7 @@ git clone https://github.com/tankeng/newself2.git
 
 COMMAND VIA VPS/SERVER
 ========
+
 sudo apt-get update
 sudo apt-get install git
 sudo apt-get install python-software-properties
