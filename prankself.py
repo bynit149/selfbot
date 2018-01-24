@@ -778,7 +778,7 @@ def bot(op):
                     cl.sendText(msg.to,"Not for use less than group")
             elif "Creator" == msg.text:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'ufce863f62f40706c01fa4a3c3c4cb096'}
+                msg.contentMetadata = {'mid': 'u0ffe4a5e9e4e06d8f67d5fa50fecf41f'}
                 cl.sendMessage(msg)
             elif "Mymid" == msg.text:
                 cl.sendText(msg.to,mid)
@@ -1085,7 +1085,7 @@ def bot(op):
                     ki18.updateProfile(profile)
                     ki8.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
 #--------------------------------------------------------
-            elif "Sc:" in msg.text:
+            elif "uid:" in msg.text:
                 mmid = msg.text.replace("Mid:","")
                 msg.contentType = 13
                 msg.contentMetadata = {"mid":mmid}
@@ -3010,7 +3010,7 @@ def bot(op):
                 except:
                     cl.sendText(msg.to,"Could not find it")
 #------------------------------------------------
-            elif "Getinfo" in msg.text:
+            elif "ข้อมูล" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
                 contact = cl.getContact(key1)
@@ -3366,7 +3366,7 @@ def bot(op):
 #                                    ki3.sendText(msg,to,"Nuke Finish")
 #                                    ki2.sendText(msg,to,"
 #-------------------------------------------------------------
-            elif msg.text in ["Tag","Tagall"]:
+            elif msg.text in ["Tag","Tagall","แทก"]:
 	            #if msg.from_ in admin:
                 group = cl.getGroup(msg.to)
                 k = len(group.members)//100
